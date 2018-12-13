@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>小度在家 有事找TA</title>
+    <!--统一样式设置-->
+    <link type="text/css" rel="stylesheet" href="css/base.css"/>
+    <link type="text/css" rel="stylesheet" href="css/layer.css"/>
+    <style>
+        .container {
+            background-color: #e55c64;
+        }
+        .city, .name{
+            display: none;
+        }
+        .opt_first{
+            display: block;
+        }
+        .form {
+            padding: 1rem 1.5rem;
+            padding: 1rem 1.5rem;
+        }
+        .form dl {
+            color: #fff;
+            font-size: 13px;
+            overflow: hidden;
+            margin-bottom: 15px;
+        }
+        .form dl:last-child{
+            margin-bottom: 0;
+        }
+        .form  dt{
+            width: 25%;
+            float: left;
+        }
+        .form  dd{
+            width: 75%;
+            float: left;
+        }
+        .form  dt::before{
+            content: "*";
+            color: red;
+        }
+        .form input {
+            border: 1px solid #acadad;
+            border-radius: 3px;
+            padding: 5px 8px;
+            font-size: 15px;
+            color: #333;
+        }
+        .form select {
+            height: 2rem;
+            width: 48%;
+            color: #aba4a4;
+            border-radius: 3px;
+            float: left;
+            background-color: #fff;
+        }
+        .form button{
+            background-color: #ba3f47;
+            color: #fff;
+            height: 2.5rem;
+            line-height: 2.5rem;
+            border-radius: 3px;
+        }
+        .box-justify{
+            display: flex;
+            justify-content: space-between;
+        }
+        .let-space {
+            font-size: 16px;
+            letter-spacing: 40px;
+            padding-left: 40px;
+        }
+        .a_put{
+            display: block;
+            padding: 0;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src="bg.jpg" alt="">
+    <section class="form js-form">
+    <dl>
+        <dt>手机号</dt>
+        <dd>
+            <input type="text" class="w100p form-item js-mobile" placeholder="手机号"/>
+        </dd>
+    </dl>
+    <!--<dl>-->
+        <!--<dt>验证码</dt>-->
+        <!--<dd class="box-justify">-->
+            <!--<input type="text" class="w50p form-item-code" placeholder="验证码"/>-->
+            <!--<button type="button" class="btn w40p form-item-btn">获取验证码</button>-->
+        <!--</dd>-->
+    <!--</dl>-->
+    <dl>
+        <dt>预约网点</dt>
+        <dd class="box-justify">
+            <select id="province">
+                <option value="">请选择区域</option>
+                <option>源城区</option>
+                <option>龙川县</option>
+                <option>连平县</option>
+                <option>和平县</option>
+                <option>紫金县</option>
+                <option>东源县</option>
+
+            </select>
+            <!--<select id="channels" class="js-channels">-->
+
+
+    </dl>
+    <dl>
+        <button type="button" class="w100p let-space js-submit">提交</button>
+    </dl>
+</section>
+</div>
+
+
+</body>
+</html>

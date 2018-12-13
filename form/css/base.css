@@ -1,0 +1,324 @@
+/*
+* @Author: Marte
+* @Date:   2018-12-13 09:56:13
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-12-13 09:58:43
+*/
+/*=======CSS reset start=======*/
+html { font-size: 16px; }
+@media screen and (max-width: 375px) {
+    html { font-size: 14px; }
+}
+@media screen and (max-width: 320px) {
+    html { font-size: 12px; }
+}
+html, body { width: 100%; height: 100%; -webkit-text-size-adjust: none; -webkit-tap-highlight-color: transparent; color: #333 /*word-wrap:break-word;word-break:break-all;*/; }
+body { -webkit-overflow-scrolling: touch; font: 1.4rem/1.5 Verdana, Microsoft YaHei, Helvetica, Arial, Hiragino Sans GB, sans-serif, Simsun; }
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, /* structural elements结构元素 */ dl, dt, dd, ul, ol, li, /* list elements 列表元素 */ pre, code, form, fieldset, legend, input, button, textarea, th, td, hr { margin: 0; padding: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
+fieldset, img, input, textarea, button, abbr { border: 0 none; }
+caption, th, cite, em, strong, var, b, i, code, dfn, address { font-style: normal; }
+caption, th, em, strong, b { font-weight: normal; }
+ol, ul, li { list-style-type: none; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+input, textarea, optgroup, option, select, button { vertical-align: middle; font: inherit; }
+/*文本域默认是不会继承其他字体的样式的，所以设置继承上级字体样式*/
+textarea { resize: none; }
+input[type="button"], input[type="submit"], input[type="reset"], input[type="search"], select, button { appearance: none; -webkit-appearance: none; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: textfield; }
+button, input[type="submit"], input[type="button"] { cursor: pointer; }
+a { text-decoration: none; color: #333; }
+a:hover { text-decoration: none; }
+a, a:active, :focus { outline: none; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; margin: 0; padding: 0; }
+/* 设置HTML5元素为块 */
+img, embed, video, object, iframe { max-width: 100%; vertical-align: middle; }
+code, kbd, pre, samp { font-family: monospace; }
+pre { word-break: break-all; word-wrap: break-word; }
+/*=======CSS reset end=======*/
+
+
+/*=======文字排版 start======*/
+.f10 { font-size: 1rem; }
+.f12 { font-size: 1.2rem; }
+.f13 { font-size: 1.3rem; }
+.f14 { font-size: 1.4rem; }
+.f15 { font-size: 1.5rem; }
+.f16 { font-size: 1.6rem; }
+.f18 { font-size: 1.8rem; }
+.f20 { font-size: 2rem; }
+.f22 { font-size: 2.2rem; }
+.f24 { font-size: 2.4rem; }
+.f34 { font-size: 3.4rem; }
+
+.fwb { font-weight: bold; }
+.fwn { font-weight: normal; }
+.ti2 { text-indent: 2em; }
+/*移动设备下，text-indent在input框的支持性不好，建议使用padding-left缩进*/
+.ti3 { text-indent: 3em; }
+
+.unl { text-decoration: underline; }
+.none_unl { text-decoration: none; }
+/*=======文字排版 end======*/
+
+
+/*===========文字颜色==========*/
+.fwhite { color: #fff; }
+.f000 { color: #000; }
+.f333 { color: #333; }
+.f666 { color: #666; }
+.f999 { color: #999; }
+
+/*===========文字颜色 end==========*/
+
+/*=======定位 begin======*/
+.tl { text-align: left; }
+.tc { text-align: center; }
+.tr { text-align: right; }
+.fl { float: left; display: inline; }
+.fr { float: right; display: inline; }
+.cb { clear: both; }
+.cl { clear: left; }
+.cr { clear: right; }
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.vm { vertical-align: middle; }
+.vt { vertical-align: top; }
+.pr { position: relative; }
+.pa { position: absolute; }
+.db { display: block; }
+.dn { display: none; }
+.ib { display: inline-block; vertical-align: middle; }
+.oh { overflow: hidden; }
+.ov { overflow: visible; }
+.oxa { overflow-x: auto; }
+.oya { overflow-y: auto; }
+/*=======定位 end======*/
+
+
+/*=======长度高度 begin======*/
+.w10p { width: 10%; }
+.w15p { width: 15%; }
+.w20p { width: 20%; }
+.w25p { width: 25%; }
+.w30p { width: 30%; }
+.w33p { width: 33%; }
+.w40p { width: 40%; }
+.w49p { width: 49%; }
+.w50p { width: 50%; }
+.w60p { width: 60%; }
+.w65p { width: 65%; }
+.w70p { width: 70%; }
+.w80p { width: 80%; }
+.w90p { width: 90%; }
+.w100p { width: 100%; }
+
+.h100p { height: 100%; }
+/*=======长度高度 end======*/
+
+/*=======边距 start======*/
+.ma { margin-left: auto; margin-right: auto; }
+.m5 { margin: .5rem; }
+.m10 { margin: 1rem; }
+.m15 { margin: 1.5rem; }
+.m30 { margin: 3rem; }
+
+.mt5 { margin-top: 0.5rem; }
+.mt10 { margin-top: 1rem; }
+.mt15 { margin-top: 1.5rem; }
+.mt20 { margin-top: 2rem; }
+.mt30 { margin-top: 3rem; }
+.mt40 { margin-top: 4rem; }
+.mt50 { margin-top: 5rem; }
+.mt100 { margin-top: 10rem; }
+
+.mb5 { margin-bottom: 0.5rem; }
+.mb10 { margin-bottom: 1rem; }
+.mb15 { margin-bottom: 1.5rem; }
+.mb20 { margin-bottom: 2rem; }
+.mb30 { margin-bottom: 3rem; }
+.mb40 { margin-bottom: 4rem; }
+.mb50 { margin-bottom: 5rem; }
+.mb100 { margin-bottom: 10rem; }
+
+.ml5 { margin-left: 0.5rem; }
+.ml10 { margin-left: 1rem; }
+.ml15 { margin-left: 1.5rem; }
+.ml20 { margin-left: 2rem; }
+.ml25 { margin-left: 2.5rem; }
+.ml30 { margin-left: 3rem; }
+.ml40 { margin-left: 4rem; }
+.ml50 { margin-left: 5rem; }
+
+.mr5 { margin-right: 0.5rem; }
+.mr10 { margin-right: 1rem; }
+.mr15 { margin-right: 1.5rem; }
+.mr20 { margin-right: 2rem; }
+.mr25 { margin-right: 2.5rem; }
+.mr30 { margin-right: 3rem; }
+.mr40 { margin-right: 4rem; }
+.mr50 { margin-right: 5rem; }
+
+.p5 { padding: .5rem; }
+.p10 { padding: 1rem; }
+.p15 { padding: 1.5rem; }
+.p20 { padding: 2rem; }
+.p30 { padding: 3rem; }
+
+.pt5 { padding-top: 0.5rem; }
+.pt10 { padding-top: 1rem; }
+.pt15 { padding-top: 1.5rem; }
+.pt20 { padding-top: 2rem; }
+.pt30 { padding-top: 3rem; }
+.pt50 { padding-top: 5rem; }
+
+.pb5 { padding-bottom: 0.5rem; }
+.pb10 { padding-bottom: 1rem; }
+.pb15 { padding-bottom: 1.5rem; }
+.pb20 { padding-bottom: 2rem; }
+.pb30 { padding-bottom: 3rem; }
+.pb50 { padding-bottom: 5rem; }
+
+.pl5 { padding-left: 0.5rem; }
+.pl10 { padding-left: 1rem; }
+.pl15 { padding-left: 1.5rem; }
+.pl20 { padding-left: 2rem; }
+.pl25 { padding-left: 2.5rem; }
+.pl30 { padding-left: 3rem; }
+.pl50 { padding-left: 5rem; }
+
+.pr5 { padding-right: 0.5rem; }
+.pr10 { padding-right: 1rem; }
+.pr15 { padding-right: 1.5rem; }
+.pr20 { padding-right: 2rem; }
+.pr25 { padding-right: 2.5rem; }
+.pr30 { padding-right: 3rem; }
+.pr50 { padding-right: 5rem; }
+.pr12 { padding-right: 1.5rem; }
+/*=======边距 end======*/
+
+/*布局*/
+.fl{ float: left;}
+.fr{ float: right;}
+.clear{ clear: both;}
+.clearfix{*zoom:1;}
+.clearfix::after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+.flex{ display: flex; display: -webkit-flex;}
+.flex_ver{ -webkit-align-items: center;  align-items: center;}  /* 垂直居中 */
+.flex_hor{  -webkit-justify-content:space-around;  justify-content:space-around;}  /* 水平居中 */
+.flex_jus{ -webkit-box-pack: justify;  -webkit-justify-content: space-between;  -ms-flex-pack:justify ;  justify-content: space-between; text-align: justify;text-align-last: justify;}  /*  两端对齐*/
+.flex_jus::after {
+    content: " ";
+    display: inline-block;
+    width: 0;
+    height:0;
+}
+.show{ display: block;}
+.hide{ display: none;}
+
+/* 活动规则样式--start */
+.rude-wrap{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.rude-wrap .title{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 1rem;
+}
+
+.rude-wrap .content{
+    font-size: 12px;
+    height: 10rem;
+    overflow-y: auto;
+}
+/* 活动规则样式--end */
+
+/* 手机验证弹框样式--start */
+.reg-wrap {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 22rem;
+    height: 20.28rem;
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    /*display: none;*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    color: #fff;
+}
+
+.reg-wrap .reg-cont {
+    margin: 3.57rem 0 1.43rem 0;
+}
+
+.reg-wrap .reg-cont .form-item-btn[disabled]{
+    opacity: .8;
+}
+
+.reg-wrap .title {
+    font-size: 1rem;
+    text-align: center;
+}
+.reg-wrap button.close {
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    float: right;
+    font-size: 21px;
+    line-height: 1;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.reg-wrap .form-wrap{
+    margin: 0 2.15rem;
+}
+.reg-wrap .input-list{
+    margin-top: 1rem;
+}
+.reg-wrap .input-list:last-child{
+    margin-top: 1.5rem;
+}
+.reg-wrap input{
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 0 .5rem;
+}
+.reg-wrap .form-item, .reg-wrap .form-item-code, .reg-wrap .form-item-btn{
+    width: 100%;
+    border-radius: 10px;
+    height: 2.85rem;
+    opacity: 1;
+}
+.reg-wrap .form-item-code{
+    float: left;
+    width: 56%;
+}
+.reg-wrap .form-item-code + .form-item-btn{
+    float: right;
+}
+.reg-wrap .form-item-btn{
+    width: 41%;
+    color: #fff;
+    font-size: 12px;
+}
+.reg-wrap .input-list:last-child .form-item-btn{
+    width: 100%;
+    padding-left: 3rem;
+    letter-spacing: 3rem;
+    font-size: 15px;
+}
+/* 手机验证弹框样式--end */
+.linkStrong{
+    color: #f74040;
+    font-weight: 700;
+}
